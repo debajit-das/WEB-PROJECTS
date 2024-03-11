@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0px 30px;
+    width: 100%;
+  }
+  main {
+    padding: 0;
+  }
+}

@@ -1,0 +1,48 @@
+/* ---------------------------UNIVERSAL CSS--------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--backgroundColor);
+  font-family: "Baloo Bhai";
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --textColor: #6c9894;
+  --backgroundColor: #f4f9f4;
+  --borderColor: #bed2ce;
+  --backgroundColor2: #a7d7c5;
+}
+
+/* ---------------------------HEADER START---------------------- */
+header img {
+  position: relative;
+  background-color: var(--backgroundColor2);
+  /* top: 150px; */
+  /* background-color: var(--backgroundColor); */
+}
+nav {
+  background-color: var(--borderColor);
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5rem;
+}
+/* --------------------------HEADER END------------------------ */
+
+/* --------------------------HERO SECTION START-------------------- */
+.heroSection {
+  display: flex;
+  flex-direction: row;
+}
+.heroImg1 {
+  z-index: 150;
+  position: relative;
+  /* top: 50%; */
+}

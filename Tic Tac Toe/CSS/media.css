@@ -1,0 +1,10 @@
+/* ------------------media------------------ */
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .game {
+    grid-template-columns: repeat(3, 22vw);
+    grid-template-rows: repeat(3, 22vw);
+  }
+}

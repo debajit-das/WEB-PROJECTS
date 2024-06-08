@@ -80,6 +80,7 @@ reset.addEventListener("click", () => {
     element.innerText = "";
     image.style.width = "0";
     document.querySelector("h2").innerText = "";
+    document.querySelector(".over-text").innerText = "";
     turn = "X";
     player = playerOne;
     document.getElementsByClassName("info")[0].innerText = "Turn for " + player;

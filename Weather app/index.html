@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/6519a7b2db.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          id="search"
+          type="text"
+          placeholder="Enter city name"
+          spellcheck="false"
+        />
+        <button>
+          <svg
+            class="crossIcon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+          <svg
+            class="searchIcon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </button>
+        <!-- <a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a> -->
+      </div>
+      <div class="error">
+        <p>Invalid city name !</p>
+      </div>
+      <div class="weather">
+        <div class="weatherReport">
+          <img src="ASSETS/clouds.png" class="weather-icon" />
+          <h1 class="temp"></h1>
+          <h2 class="city"></h2>
+          <p class="condition"></p>
+        </div>
+        <div class="details">
+          <div class="col">
+            <img src="ASSETS/humidity.png" alt="" />
+            <div>
+              <p class="humidityDetails"></p>
+              <p class="humidity">Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="ASSETS/wind.png" alt="" />
+            <div>
+              <p class="windDetails"></p>
+              <p class="wind">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/app.js"></script>
+    <!-- <script>
+      const apiKey = " ";
+      const apiUrl = "5dca76c183ce127198dbaab0d7633778 ";
+    </script> -->
+  </body>
+</html>

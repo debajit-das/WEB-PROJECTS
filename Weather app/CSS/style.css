@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid black; */
+}
+a i {
+  text-decoration: none;
+}
+body {
+  background-color: #222;
+  padding: 5vw 25vw;
+}
+/* --------------------------------CARD-------------------------------- */
+.card {
+  width: 50vw;
+  /* height: 80vh; */
+  margin: auto;
+  padding: 3vw 10vw;
+  background: linear-gradient(0deg, #00ffb8 0%, #be8ceb 100%);
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+.error {
+  display: none;
+  padding-top: 3vw;
+  margin: auto;
+}
+/* ------------------------------SEARCH BAR--------------------------------- */
+.weather {
+  display: none;
+}
+.search {
+  width: 100%;
+  height: 3.5vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 1vw 4vw 1vw 2.5vw;
+  height: 100%;
+  width: 80%;
+  border-radius: 80px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 1rem;
+}
+.search button {
+  position: relative;
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  font-size: 2rem;
+  width: 3.5vw;
+  height: 3.5vw;
+  cursor: pointer;
+}
+.searchIcon {
+  /* border: 1px solid black; */
+  /* color: black; */
+  height: 45%;
+  width: 45%;
+  margin: auto;
+  position: absolute;
+  bottom: 0.95vw;
+  right: 0.91vw;
+}
+.crossIcon {
+  /* border: 1px solid black; */
+  /* color: black; */
+  height: 45%;
+  width: 45%;
+  margin: auto;
+  position: absolute;
+  bottom: 0.95vw;
+  right: 6vw;
+}
+/* --------------------------------------MAIN BODY-------------------------------------- */
+.weatherReport {
+  /* background-color: #be8ceb; */
+  /* border: 1px solid red; */
+  padding-top: 5%;
+  height: 70%;
+}
+.weatherReport img {
+  height: 30%;
+  width: 30%;
+}
+.weatherReport h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.weatherReport h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/* ---------------------------------details---------------------------- */
+.details {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 2vw;
+  margin-top: 3vw;
+}
+.col {
+  /* margin-top: 2vw; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.col img {
+  height: 3vw;
+  width: 3vw;
+}
+.humidityDetails {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.humidity {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.windDetails {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.wind {
+  font-size: 1rem;
+  font-weight: 500;
+}

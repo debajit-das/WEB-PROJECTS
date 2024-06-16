@@ -15,9 +15,11 @@ const weatherBox = document.querySelector(".weather");
 const weatherCondition = document.querySelector(".condition");
 
 async function checkWeather(city) {
+  showLoader();
   const response = await fetch(url + city, options);
   const result = await response.json();
-  //   console.log(result);
+  hideLoader();
+  // console.log(result);
   if (result.cod == 404) {
     document.querySelector(".error").style.display = "block";
     weatherBox.style.display = "none";
@@ -75,4 +77,14 @@ kelvinToCelsius(result.main.temp);
 function kelvinToCelsius(kelvin) {
   var celsius = kelvin - 273;
   return Math.round(celsius);
+}
+// -----------------------------Loader function-----------------------------
+function hideLoader() {
+  const loader = document.querySelector(".loader");
+  loader.style.display = "none";
+}
+
+function showLoader() {
+  const loader = document.querySelector(".loader");
+  loader.style.display = "block";
 }

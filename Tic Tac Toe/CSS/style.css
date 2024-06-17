@@ -20,7 +20,7 @@ h1 {
 .msg h2 {
   margin-top: 5vh;
   font-family: "Balsamiq Sans", sans-serif;
-  color: hsl(120, 57%, 45%);
+  /* color: #31b431; */
   /* display: none; */
 }
 .image {

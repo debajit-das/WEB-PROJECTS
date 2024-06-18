@@ -1,0 +1,20 @@
+@media (max-width: 600px) {
+  body {
+    height: 83vh;
+    width: 100vw;
+    display: block;
+    position: relative;
+    align-items: center;
+    margin-top: 10vh;
+  }
+  .calculator {
+    margin: auto;
+    width: 90vw;
+    height: 70vh;
+  }
+  button {
+    height: 6vh;
+    width: 6vh;
+    margin: 2vh 1.6vh;
+  }
+}

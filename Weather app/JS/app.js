@@ -1,11 +1,5 @@
-const url = "https://weather-api138.p.rapidapi.com/weather?city_name=";
-const options = {
-  method: "GET",
-  headers: {
-    "x-rapidapi-key": "1115bf28cdmshbf28d70044822e4p12bb9bjsndb3f433a9dc2",
-    "x-rapidapi-host": "weather-api138.p.rapidapi.com",
-  },
-};
+const url = "https://api.openweathermap.org/data/2.5/weather?";
+const apiKey = "5dca76c183ce127198dbaab0d7633778";
 
 const searchBox = document.querySelector(".search input");
 const search = document.querySelector(".searchIcon");
@@ -16,10 +10,10 @@ const weatherCondition = document.querySelector(".condition");
 
 async function checkWeather(city) {
   showLoader();
-  const response = await fetch(url + city, options);
+  const response = await fetch(url + `q=${city}` + `&appid=${apiKey}`);
   const result = await response.json();
   hideLoader();
-  // console.log(result);
+  console.log(result);
   if (result.cod == 404) {
     document.querySelector(".error").style.display = "block";
     weatherBox.style.display = "none";
@@ -31,7 +25,7 @@ async function checkWeather(city) {
     document.querySelector(".humidityDetails").innerHTML =
       result.main.humidity + " %";
     document.querySelector(".windDetails").innerHTML =
-      result.wind.speed + " m/s";
+      result.wind.speed + " km/h";
     weatherBox.style.display = "block";
 
     if (result.weather[0].main == "Clouds") {
